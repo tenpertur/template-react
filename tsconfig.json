@@ -4,11 +4,20 @@
     "noImplicitAny":true,
     "module":"es6",
     "target":"es5",
-    "jsx":"react",
-    "allowJs": false,
+    "jsx":"react-jsx",
+    "allowJs": true,
     "moduleResolution":"node",
     "esModuleInterop": true,
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "paths": {
+      "components/*": [
+        "components/*"
+      ]
+    }
   },
   "include": ["src"]
 }
